@@ -1,0 +1,14 @@
+name: Main
+on:
+  push:
+    branches: [master]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    container:
+      image: node:22
+    steps:
+      - uses: actions/checkout@v4
+      - run: npm install
+      - run: npm run build
