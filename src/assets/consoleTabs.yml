@@ -1,0 +1,21 @@
+tabs:
+- replShell:
+  name: REPL shell
+  text: |
+    To be written.
+- beamify:
+  name: Beamify
+  text: |
+    To be written.
+- standaloneVMs:
+  name: Standalone VMs
+  text: |
+    To be written.
+- packageManager:
+  name: Package Manager
+  text: |
+    To be written.
+- beamAPI:
+  name: Beam C API
+  text: |
+    To be written.
