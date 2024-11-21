@@ -1,5 +1,6 @@
 import './main.scss'
 import * as bootstrap from 'bootstrap'
+import 'bootstrap-icons/font/bootstrap-icons.scss';
 
 import { createApp } from 'vue'
 import { createRouter, createWebHistory } from 'vue-router'
