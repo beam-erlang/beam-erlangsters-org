@@ -11,6 +11,7 @@ import Learn from './pages/Learn.vue'
 import Download from './pages/Download.vue'
 import About from './pages/About.vue'
 import News from './pages/News.vue'
+import Report from './pages/Report.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -39,6 +40,11 @@ const router = createRouter({
         path: '/news',
         name: 'news',
         component: News
+    },
+    {
+        path: '/news/:number',
+        name: 'report',
+        component: Report
     }
   ]
 })
