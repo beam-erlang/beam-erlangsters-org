@@ -1,29 +1,13 @@
-# otpless-erlang
+# OTPless Erlang - Website
 
-This template should help get you started developing with Vue 3 in Vite.
+The source code of the OTPless Erlang website which is available at
+https://www.otpless-erlang.org/.
 
-## Recommended IDE Setup
+- Developed and tested with Node.js 22
+- Uses the [Vue.js 3.x](https://v3.vuejs.org/) UI framework.
+- Uses the [Bootstrap 5.x](https://getbootstrap.com/) UI library.
+- Designed for all screen sizes.
+- No versioning is used, updated as needed.
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
-
-## Customize configuration
-
-See [Vite Configuration Reference](https://vite.dev/config/).
-
-## Project Setup
-
-```sh
-npm install
-```
-
-### Compile and Hot-Reload for Development
-
-```sh
-npm run dev
-```
-
-### Compile and Minify for Production
-
-```sh
-npm run build
-```
+It's written by the Erlangsters community and is released under the MIT
+license.
