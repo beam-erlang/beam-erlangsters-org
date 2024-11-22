@@ -2,20 +2,56 @@ tabs:
 - replShell:
   name: REPL shell
   text: |
-    To be written.
+    > erlangster@laptop:~/$ beam
+    Erlang/OTP 24 [erts-12.2.1] [source] [64-bit] [smp:8:8]
+
+    Eshell V12.2.1  (abort with ^G)
+    1>
 - beamify:
   name: Beamify
   text: |
-    To be written.
+    > ls
+    hello_world.erl
+
+    > cat hello_world.erl
+    module(hello_world).
+    -export([main/1]).
+    main(_) -> io:format("Hello, World!~n").
+
+    > beamify hello_world.erl
+
+    > ls
+    hello_world.beam  hello_world.erl
 - standaloneVMs:
   name: Standalone VMs
   text: |
-    To be written.
+    > beam run --pid beam-vm.pid
+    > beam shell attach beam-vm.pid
+    > bem stop beam-vm.pid
 - packageManager:
   name: Package Manager
   text: |
-    To be written.
+    > beamy init
+    > beamy install cowboy
+    > beamy install cowboy --save
+    > beamy install cowboy --save-dev
+    > beamy install cowboy --global
+    > beamy install cowboy --global --save
 - beamAPI:
   name: Beam C API
   text: |
-    To be written.
+    #include <stdio.h>
+    #include <beam.h>
+
+    int main() {
+        // Initialize the BEAM VM
+        if (beam_init() != 0) {
+            fprintf(stderr, "Failed to initialize BEAM VM\n");
+            return 1;
+        }
+
+        // Create an Erlang integer term
+        beam_term arg = beam_int(-42);
+
+        // Call the Erlang function erlang:abs/1
+        beam_term result = beam_call_function("erlang", "abs", 1, &arg);

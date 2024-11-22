@@ -22,7 +22,7 @@ const router = createRouter({
       component: Home
     },
     {
-        path: '/learn',
+        path: '/learn/:article?',
         name: 'learn',
         component: Learn
     },
