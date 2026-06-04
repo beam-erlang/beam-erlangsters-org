@@ -1,0 +1,63 @@
+# Note: the Vue Learn page currently hardcodes the groups and article list for rendering.
+# This file is kept for reference / future use. Keep in sync with the actual articles.
+
+articles_groups:
+- title: "Redistributed Erlang"
+  articles:
+  - title: "Beyond Erlang"
+    description: "The three classic components and how the re-org clarifies the boundaries."
+    url: "/learn/beyond-erlang"
+  - title: "The OTP framework"
+    description: "Why it was historically bundled and why unbundling now makes sense."
+    url: "/learn/bundled-otp"
+  - title: "Re-imagining Erlang/OTP"
+    description: "The 29 restart, the split, and the benefits."
+    url: "/learn/re-imagining-erlang-otp"
+  - title: "Graphical applications"
+    description: "Making ordinary GUIs practical with packages and the modern build."
+    url: "/learn/graphical-applications"
+  - title: "Android and iOS support"
+    description: "Why a 'fit' (not the 'best fit') is viable for logic-heavy mobile work."
+    url: "/learn/android-and-ios-support"
+
+- title: "Swiss Army Knife"
+  articles:
+  - title: "Developer CLI and tools"
+    description: "erl/erlc plus the Spark commands."
+    url: "/learn/new-cli-utility"
+  - title: "REPL shell"
+    description: "Interactive work with packages resolved."
+    url: "/learn/repl-shell"
+  - title: "Building and packaging"
+    description: "Turning source into artifacts and releases."
+    url: "/learn/beamify"
+  - title: "Standalone VMs and deployment"
+    description: "Minimal, self-contained runtimes."
+    url: "/learn/standalone-vms"
+
+- title: "BEAM Packages"
+  articles:
+  - title: "The BEAM package format"
+    description: "Manifests, native artifacts, platform specifics."
+    url: "/learn/beam-format"
+  - title: "Spark: the BEAM package manager"
+    description: "Install, run, registry, familiar workflow."
+    url: "/learn/package-manager"
+
+- title: "BEAM C API"
+  articles:
+  - title: "Extending the BEAM with C"
+    description: "NIFs and drivers as first-class package citizens."
+    url: "/learn/extending-c-api"
+  - title: "Embedding the BEAM"
+    description: "Using the runtime inside a larger native host."
+    url: "/learn/embedding-beam"
+
+- title: "Custom BEAM builds"
+  articles:
+  - title: "Modern CMake build system"
+    description: "Core distribution build + broad cross-platform matrix."
+    url: "/learn/new-cmake-build-system"
+  - title: "Workflow, CI/CD, and verification"
+    description: "The matrix and what it means for contributors and package authors."
+    url: "/learn/workflow-cicd"
